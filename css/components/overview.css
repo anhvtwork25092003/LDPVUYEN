@@ -1,0 +1,83 @@
+/* OVERVIEW SECTION */
+.overview {
+    padding: 4rem 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('../assets/images/overview-bg.jpg') center/cover;
+}
+
+.overview__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.overview__header h1 {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.overview__subtitle {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+}
+
+/* Form Style */
+.overview__form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.register-form {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+/* BACKGROUND ẢNH */
+.background-cover {
+    position: relative;
+    z-index: 1;
+}
+
+.background-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../img/slideshow/449519720_122118644888330717_1995325244902668972_n\ -\ Copy.jpg') center/cover no-repeat;
+    opacity: 0.2;
+    /* Điều chỉnh độ mờ */
+    z-index: -1;
+}
+
+/* Đảm bảo nội dung hiển thị rõ */
+.overview__header,
+.overview__form,
+.promo-cards {
+    position: relative;
+    z-index: 2;
+}
+
+/* Tăng độ tương phản chữ */
+.overview__header h1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,34 @@
+/* PROMO CARDS */
+.promo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.promo-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.promo-card h4 {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.promo-highlight {
+    font-size: 2.0rem;
+    color: var(--color-accent);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.promo-highlight span {
+    display: block;
+    font-size: 2.0rem;
+    color: var(--color-dark);
+}

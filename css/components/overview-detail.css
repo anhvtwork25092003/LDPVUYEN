@@ -1,0 +1,127 @@
+/* LAYOUT CHÍNH */
+.overview-detail {
+    padding: 4rem 1rem;
+
+}
+
+.overview-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.overview-header h1 {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* BỐ CỤC 2 CỘT */
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* CỘT ẢNH */
+.overview-media {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featured-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.featured-image:hover {
+    transform: scale(1.03);
+}
+
+/* CỘT THÔNG TIN */
+.info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #eee;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+.info-label {
+    font-weight: 600;
+    color: var(--color-primary);
+    min-width: 100px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-image {
+        height: 350px;
+    }
+}
+
+.overview-detail {
+    position: relative;
+    isolation: isolate;
+    /* Ngăn hiệu ứng tràn layer */
+    padding: 4rem 1rem;
+}
+
+/* Lớp background ảnh mờ */
+.overview-detail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../img/slideshow/edb975d4-a517-4ac1-8440-02e55c1a2ceb.jpg') center/cover no-repeat;
+    opacity: 0.2;
+    /* Độ mờ = section form */
+    z-index: -1;
+    filter: brightness(0.95);
+    /* Giảm chói */
+    background-attachment: fixed;
+    /* Hiệu ứng parallax */
+    transition: opacity 0.5s ease;
+    /* Mờ nhẹ khi hover */
+}
+
+/* Đảm bảo nội dung hiển thị rõ */
+.overview-header,
+.overview-grid {
+    position: relative;
+}

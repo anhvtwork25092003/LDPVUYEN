@@ -1,0 +1,15 @@
+/* BASE */
+@import '../css/base/reset.css';
+@import '../css/base/variables.css';
+
+/* COMPONENTS */
+@import '../css/components/button.css';
+/* Thêm dòng này */
+@import '../css/components/nav.css';
+@import '../css/components/slider.css';
+@import '../css/components/sections.css';
+@import '../css/components/overview.css';
+@import '../css/components/overview-detail.css';
+
+@import '../css/components/cards.css';
+@import '../css/components/location.css';

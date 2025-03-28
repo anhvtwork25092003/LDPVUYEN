@@ -1,0 +1,87 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem var(--space-lg);
+    /* Thay đổi dòng này */
+    height: 60px;
+    /* Thêm dòng này để cố định chiều cao */
+    background: rgba(10, 61, 98, 0.95);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+@media (max-width: 992px) {
+    .nav {
+        padding: 0.75rem var(--space-md);
+        /* Giảm padding trên mobile */
+        height: 56px;
+        /* Giảm nhẹ chiều cao */
+    }
+}
+
+.nav__logo-img {
+    height: 2.5rem;
+}
+
+.nav__menu {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.nav__link {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    bottom: -4px;
+    left: 0;
+    transition: var(--transition);
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+/* Mobile */
+.nav__mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .nav__menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--color-primary);
+        flex-direction: column;
+        align-items: center;
+        padding: var(--space-lg);
+        clip-path: circle(0px at 90% -10%);
+        transition: clip-path 0.5s ease;
+    }
+
+    .nav__menu--active {
+        clip-path: circle(150% at 90% -10%);
+    }
+
+    .nav__mobile-toggle {
+        display: block;
+    }
+}

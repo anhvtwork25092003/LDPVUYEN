@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARADISE VILLAS - Biệt Thự Đảo Cao Cấp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav id="mainNav" class="nav">
+      <div class="nav__logo">
+        <img src="../img/OIP.jpg" alt="Paradise Villas" class="nav__logo-img" />
+      </div>
+
+      <ul class="nav__menu">
+        <li class="nav__item"><a href="#" class="nav__link">TRANG CHỦ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">TỔNG QUAN</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">CHÍNH SÁCH & CHIẾT KHẤU</a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">VỊ TRÍ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">TIỆN ÍCH</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">TƯ VẤN</a></li>
+      </ul>
+
+      <button class="btn btn--primary nav__cta" id="jsPriceBtn">
+        NHẬN PHIẾU TÍNH GIÁ <span id="jsCurrentDate"></span>
+      </button>
+
+      <button class="nav__mobile-toggle" id="jsMobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- ===== SLIDER ===== -->
+    <section class="hero" id="heroSlider">
+      <!-- Slide 1 -->
+      <div class="hero__slide hero__slide--active">
+        <img
+          src="../img/slideshow/449519720_122118644888330717_1995325244902668972_n - Copy.jpg"
+          alt="Biệt thự đảo Paradise"
+          class="hero__image"
+        />
+        <div class="hero__content">
+          <h1 class="hero__title">BIỆT THỰ ĐẢO PARADISE</h1>
+          <p class="hero__subtitle">Kiến trúc Địa Trung Hải độc bản</p>
+          <button class="btn btn--primary btn--lg hero__btn" id="jsConsultBtn1">
+            NHẬN TƯ VẤN NGAY
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero__slide">
+        <img
+          src="../img/slideshow/edb975d4-a517-4ac1-8440-02e55c1a2ceb.jpg"
+          alt="Hồ bơi vô cực"
+          class="hero__image"
+        />
+        <div class="hero__content">
+          <h1 class="hero__title">TIỆN ÍCH ĐẲNG CẤP</h1>
+          <p class="hero__subtitle">Trải nghiệm nghỉ dưỡng 5 sao</p>
+          <button class="btn btn--primary btn--lg hero__btn" id="jsConsultBtn2">
+            NHẬN TƯ VẤN NGAY
+          </button>
+        </div>
+      </div>
+
+      <!-- Điều hướng -->
+      <button class="hero__control hero__control--prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="hero__control hero__control--next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Indicators -->
+      <div class="hero__indicators">
+        <button
+          class="hero__indicator hero__indicator--active"
+          data-slide="0"
+        ></button>
+        <button class="hero__indicator" data-slide="1"></button>
+      </div>
+    </section>
+
+    <!-- ===== NỘI DUNG CHÍNH ===== -->
+    <main class="content">
+      <!-- SECTION TỔNG QUAN CHI TIẾT -->
+      <section id="project-overview" class="overview-detail">
+        <!-- Phần tiêu đề -->
+        <div class="overview-header">
+          <h1>VINHOMES ROYAL ISLAND - GIỚI TINH HOA HỘI TỤ</h1>
+          <p class="subtitle">
+            Vinhomes Royal Island là sự kết hợp tinh tế giữa nghệ thuật kiến
+            trúc và vẻ đẹp thiên nhiên hòa quyện tạo nên một không gian sống lý
+            tưởng, nơi mà tinh thần hạnh phúc được hòa mình vào từng đường nét
+            của công trình. Dự án Vinhomes Royal Island có quy mô lên đến 887ha
+            gồm các loại hình sản phẩm như Nhà liền kề, shophouse, biệt thự song
+            lập, biệt thự đơn lập, dinh thự. Dự án sẽ là một biểu tượng mới tại
+            TP Hải Phòng, được đầu tư và phát triển bởi Vinhomes một thành viên
+            của tập đoàn Vingroup.
+          </p>
+        </div>
+
+        <!-- Bố cục 2 cột -->
+        <div class="overview-grid">
+          <!-- Cột trái: Ảnh căn hộ mẫu -->
+          <div class="overview-media">
+            <img
+              src="../img/tongquan1.jpg"
+              alt="Căn hộ mẫu Townhouse"
+              class="featured-image"
+            />
+          </div>
+
+          <!-- Cột phải: Thông tin dự án -->
+          <div class="overview-info">
+            <div class="info-card">
+              <h3>THÔNG TIN DỰ ÁN</h3>
+              <ul class="info-list">
+                <li>
+                  <img
+                    src="assets/images/location-pin.svg"
+                    alt="Vị trí"
+                    class="info-icon"
+                  />
+                  <span class="info-label">Vị trí:</span>
+                  <span class="info-text"
+                    >123 Đường Sông Hàn, Q. Hải Châu, Đà Nẵng</span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="assets/images/developer-icon.svg"
+                    alt="Chủ đầu tư"
+                    class="info-icon"
+                  />
+                  <span class="info-label">Chủ đầu tư:</span>
+                  <span class="info-text">Tập đoàn Paradise</span>
+                </li>
+                <li>
+                  <img
+                    src="assets/images/scale-icon.svg"
+                    alt="Quy mô"
+                    class="info-icon"
+                  />
+                  <span class="info-label">Quy mô:</span>
+                  <span class="info-text">5ha với 200 căn Townhouse</span>
+                </li>
+                <li>
+                  <img
+                    src="assets/images/home-icon.svg"
+                    alt="Loại hình"
+                    class="info-icon"
+                  />
+                  <span class="info-label">Loại hình:</span>
+                  <span class="info-text"
+                    >Townhouse, Shophouse, Biệt thự đơn lập</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="overview" class="overview background-cover">
+        <div class="overview__header">
+          <h1>CHIẾT KHẤU CAO VÀ CHÍNH SÁCH THANH TOÁN TỐT</h1>
+          <p class="overview__subtitle"></p>
+        </div>
+
+        <div class="overview__content">
+          <!-- Thẻ ưu đãi -->
+          <div class="promo-cards">
+            <div class="promo-card">
+              <h4>Booking sớm</h4>
+              <p>Chiết khấu ngay</p>
+              <div class="promo-highlight">100TR <span>13,5%</span></div>
+            </div>
+
+            <div class="promo-card">
+              <h4>Hỗ trợ vay</h4>
+              <p>Miễn lãi suất vay</p>
+              <div class="promo-highlight">70% <span>18 tháng</span></div>
+            </div>
+          </div>
+          <br />
+          <!-- Form đăng ký -->
+          <div class="overview__form">
+            <h3>NHẬN ĐẦY ĐỦ THÔNG TIN TỪ CHỦ ĐẦU TƯ</h3>
+            <form class="register-form">
+              <input type="text" placeholder="Tên của quý khách" required />
+              <input
+                type="tel"
+                placeholder="Số điện thoại"
+                pattern="[0-9]{10,11}"
+                required
+              />
+              <select>
+                <option disabled selected>Loại hình sản phẩm quan tâm</option>
+                <option>Liền kề</option>
+                <option>Shophouse</option>
+                <option>Biệt thự</option>
+              </select>
+              <button type="submit" class="btn btn--accent">
+                BẤM NHẬN THÔNG TIN
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <br />
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer__copyright">
+        &copy; 2023 Paradise Villas. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="../js/main.js" type="module"></script>
+  </body>
+</html>

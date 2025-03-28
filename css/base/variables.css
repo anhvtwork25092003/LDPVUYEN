@@ -1,0 +1,21 @@
+:root {
+    /* Màu sắc */
+    --color-primary: #0a3d62;
+    --color-primary-light: #1e5f8a;
+    --color-accent: #f0c14b;
+    --color-light: #f8f9fa;
+    --color-dark: #222;
+
+    /* Font chữ */
+    --font-main: 'Arial', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+
+    /* Khoảng cách */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+
+    /* Hiệu ứng */
+    --transition: all 0.3s ease;
+}
