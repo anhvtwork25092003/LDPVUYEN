@@ -1,0 +1,18 @@
+/* CSS cho scroll ngang toàn trang */
+html {
+    overflow-x: hidden;
+}
+
+/* Fix riêng cho Safari Mobile */
+@supports (-webkit-touch-callout: none) {
+    body {
+        position: relative;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
+/* Ngoại lệ cho các component CẦN scroll ngang */
+.scroll-x-allowed {
+    overflow-x: auto !important;
+}

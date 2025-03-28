@@ -13,14 +13,20 @@
     backdrop-filter: blur(8px);
 }
 
-@media (max-width: 992px) {
+/* Thêm vào nav.css */
+@media (max-width: 414px) {
     .nav {
-        padding: 0.75rem var(--space-md);
-        /* Giảm padding trên mobile */
-        height: 56px;
-        /* Giảm nhẹ chiều cao */
+        padding: 0.5rem var(--space-sm);
+        /* Giảm padding trên iPhone */
+    }
+
+    .nav__logo-img {
+        height: 2rem;
+        /* Thu nhỏ logo */
     }
 }
+
+
 
 .nav__logo-img {
     height: 2.5rem;

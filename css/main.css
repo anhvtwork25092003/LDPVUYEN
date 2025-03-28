@@ -1,6 +1,8 @@
 /* BASE */
 @import '../css/base/reset.css';
 @import '../css/base/variables.css';
+@import '../css/base/scroll-lock.css';
+
 
 /* COMPONENTS */
 @import '../css/components/button.css';
@@ -13,3 +15,15 @@
 
 @import '../css/components/cards.css';
 @import '../css/components/location.css';
+
+/* Thêm vào main.css */
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

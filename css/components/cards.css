@@ -7,6 +7,16 @@
     margin: 0 auto;
 }
 
+/* Thêm vào cards.css */
+.promo-card {
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+    /* Nổi nhẹ khi hover */
+}
+
 .promo-card {
     background: white;
     padding: 1.5rem;
